@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors </title>
+
+    <style>
+               p {
+            color: blue;
+        }
+
+                #mainTitle {
+            color: darkred;
+        }
+
+             .box {
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+              h2, h3 {
+            color: green;
+        }
+
+              * {
+            font-family: Arial;
+        }
+
+
+           div p {
+            background-color: #e6f7ff;
+        }
+
+  
+        div > span {
+            color: purple;
+            font-weight: bold;
+        }
+        h3 + p {
+            color: orange;
+        }
+
+            h3 ~ ul {
+            border: 2px solid black;
+        }
+
+
+  
+        button:hover {
+            background-color: yellow;
+        }
+
+        input:focus {
+            border: 3px solid red;
+        }
+
+        li:first-child {
+            color: red;
+        }
+
+
+    
+        p::first-letter {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        p::after {
+            content: " ✓";
+            color: green;
+        }
+
+
+        input[type="text"] {
+            background-color: #ffffcc;
+        }
+
+        a[target="_blank"] {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="mainTitle">CSS Selectors Example</h1>
+
+    <h2>Simple Selectors</h2>
+    <p>This is a paragraph using element selector.</p>
+    <div class="box">This div uses class selector</div>
+
+    <h3>Combinator Selectors</h3>
+    <p>Adjacent sibling paragraph</p>
+
+    <div>
+        <p>Descendant paragraph inside div</p>
+        <span>Child span element</span>
+    </div>
+
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+
+    <h2>Pseudo-class</h2>
+    <button>Hover me</button>
+    <br><br>
+    <input type="text" placeholder="Focus me">
+
+    <h2>Attribute Selector</h2>
+    <a href="https://example.com" target="_blank">Open Link</a>
+
+</body>
+</html>
